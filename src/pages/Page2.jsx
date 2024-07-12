@@ -3,12 +3,13 @@ import bannerImage from '../assets/bannerImage.png'
 import service1 from '../assets/service1.png'
 import step1 from '../assets/step1.jpg'
 import s2 from '../assets/s2.jpg'
+import s3 from '../assets/s3.jpg'
 
 const Page2 = () => {
     const items = ['Item 1', 'Item 2', 'Item 3'];
     return (
-        <div className="Service">
-            <div className='container df gap1r'>
+        <div className="Service" id='services'>
+            <div className='container df gap1r fdc' >
                 <div className="col1">
                     <h1>Our Awesome Services</h1>
                     <div className='lorem'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -16,11 +17,11 @@ const Page2 = () => {
                     </div>
                     <img src={service1} alt="" width={500} />
                 </div>
-                <div className="col2" style={{ padding: '3rem' }}>
+                <div className="col2">
                     <ul className='df fdc'>
                         <li className='df'>
-                            <div className="imageSession" style={{width:'100px'}}>
-                                <img src={step1} alt="" />
+                            <div className="imageSession df jcc aic" style={{ width: '100px' }}>
+                                <img src={step1} alt=""/>
                             </div>
                             <div className="eqvaluteImg df fdc gap1r">
                                 <b>Custom Software Development</b>
@@ -29,17 +30,26 @@ const Page2 = () => {
                             </div>
                         </li>
                         <li className='df'>
-                            <div className="imageSession" style={{width:'100px'}}>
+                            <div className="imageSession" style={{ width: '100px' }}>
                                 <img src={s2} alt="" />
                             </div>
                             <div className="eqvaluteImg df fdc gap1r">
-                            <b>Cloud Integration</b>
-                            <div className="one">Seamlessly integrate and scale your operations with our robust cloud solutions, ensuring flexibility and reliability.</div>
+                                <b>Cloud Integration</b>
+                                <div className="one">Seamlessly integrate and scale your operations with our robust cloud solutions, ensuring flexibility and reliability.</div>
                             </div>
                         </li>
-                        <li><b>Cybersecurity Services</b>
-                            <div className="one">Protect your digital assets with our comprehensive security measures, safeguarding your startup from threats and vulnerabilities.</div>
+                        <li className='df'>
+                            <div className="imageSession" style={{ width: '100px' }}>
+                                <img src={s3} alt="" />
+                            </div>
+                            <div className="eqvaluteImg df fdc gap1r">
+                                <b>Cybersecurity Services</b>
+                                <div className="one">Protect your digital assets with our comprehensive security measures, safeguarding your startup from threats and vulnerabilities.</div>
+                            </div>
                         </li>
+                        {/* <li>
+                            <div className="one">Protect your digital assets with our comprehensive security measures, safeguarding your startup from threats and vulnerabilities.</div>
+                        </li> */}
                     </ul>
                 </div>
 

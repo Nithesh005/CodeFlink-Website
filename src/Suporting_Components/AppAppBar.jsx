@@ -94,7 +94,7 @@ function AppAppBar() {
                   onClick={() => scrollToSection('features')}
                   sx={{ py: '6px', px: '12px' }}
                 >
-                  <Typography variant="body2" color="text.primary">
+                  <Typography variant="body2" color="text.primary" href='#home' component="a">
                     Home
                   </Typography>
                 </MenuItem>
@@ -115,10 +115,18 @@ function AppAppBar() {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('pricing')}
+                  onClick={() => scrollToSection('highlights')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
+                    Products
+                  </Typography>
+                </MenuItem>
+                <MenuItem
+                  onClick={() => scrollToSection('pricing')}
+                  sx={{ py: '6px', px: '12px' }}
+                >
+                  <Typography variant="body2" color="text.primary" href='#services' component="a">
                     Services
                   </Typography>
                 </MenuItem>

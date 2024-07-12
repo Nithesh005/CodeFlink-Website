@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
 import Page2 from './Page2';
+import { ContactusPAge } from './ContactusPAge';
 
 const Page1 = () => {
     useEffect(() => {
@@ -16,7 +17,7 @@ const Page1 = () => {
 
     return (
         <>
-            <div className="sec">
+            <div className="sec" id='home'>
                 <div className="bannerImage">
                     <div className="bnrText df fdc gap1r">
                         <div className="bannerText" data-aos="fade-right">
@@ -30,7 +31,7 @@ const Page1 = () => {
                 </div>
             </div>
             <Page2 />
-
+            <ContactusPAge />
         </>
     )
 }
