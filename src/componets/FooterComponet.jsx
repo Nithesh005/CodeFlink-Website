@@ -6,91 +6,51 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        backgroundColor: 'primary.main',
-        color: 'white',
-        py: 6,
+        // backgroundColor: 'primary.main',
+        backgroundColor: 'darkorange',
+        color: 'black',
+        py: 3,
         mt: 'auto',
       }}
     >
-      <Container maxWidth="lg">
-        <Grid container spacing={4} justifyContent="center">
-          <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" gutterBottom>
-              Company
-            </Typography>
-            <ul>
-              <li>
-                <Link href="#" color="inherit">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="#" color="inherit">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link href="#" color="inherit">
-                  Blog
-                </Link>
-              </li>
-            </ul>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" gutterBottom>
-              Support
-            </Typography>
-            <ul>
-              <li>
-                <Link href="#" color="inherit">
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link href="#" color="inherit">
-                  Help Center
-                </Link>
-              </li>
-              <li>
-                <Link href="#" color="inherit">
-                  Privacy Policy
-                </Link>
-              </li>
-            </ul>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" gutterBottom>
-              Social Media
-            </Typography>
-            <IconButton href="#" color="inherit">
-              <Facebook />
-            </IconButton>
-            <IconButton href="#" color="inherit">
-              <Twitter />
-            </IconButton>
-            <IconButton href="#" color="inherit">
-              <Instagram />
-            </IconButton>
-            <IconButton href="#" color="inherit">
-              <LinkedIn />
-            </IconButton>
-          </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" gutterBottom>
-              Newsletter
-            </Typography>
-            <Typography variant="body2" color="inherit">
-              Subscribe to our newsletter to get the latest updates.
-            </Typography>
-            {/* You can add a form here for email subscription */}
-          </Grid>
-        </Grid>
-        <Box mt={4} textAlign="center">
-          <Typography variant="body2" color="inherit">
-            &copy; {new Date().getFullYear()} Your Company. All rights reserved.
-          </Typography>
-        </Box>
-      </Container>
+      <div className="logo">
+        <h2 className='df jcc aic'>CODE FLINK</h2>
+      </div>
+      <hr />
+      <div className="grid">
+        <div className="grid-item">
+          <h6>Reach us</h6>
+          <ul className="df fdc">
+            <li><a href="#">8668027223</a></li>
+            <li><a href="#">codeflink@gmail.com</a></li>
+            <li><a href="#">Ghanthipuram, Coimbatore</a></li>
+          </ul>
+        </div>
+        <div className="grid-item">
+          <h6>Company</h6>
+          <ul className="df fdc">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </div>
+        <div className="grid-item">
+          <h6>Legal</h6>
+          <ul className="df fdc">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </div>
+        <div className="grid-item">
+          <h6>Newsletter</h6>
+          <p className='p1r'>Subscribe to our newsletter to get the latest updates.</p>
+        </div>
+      </div>
+      <div className="footer-text">
+        <p>&copy; <span id="year"></span> Your Company. All rights reserved.</p>
+      </div>
+
     </Box>
   );
 };

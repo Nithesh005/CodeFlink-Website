@@ -4,6 +4,7 @@ import Section from './pages/Page1';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './Lib/style.css'
+import './pages/responsive.css'
 import Head_nav_Bar from './Suporting_Components/Head_nav_Bar';
 import Page2 from './pages/Page2';
 import { Routes, Route } from 'react-router-dom';
