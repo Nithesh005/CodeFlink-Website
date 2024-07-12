@@ -1,0 +1,24 @@
+.df{
+    display: flex;
+}
+.aic{
+    align-items: center;
+}
+.tac{
+    text-align: center;
+}
+.jcc{
+    justify-content: center;
+}
+.jcsb{
+    justify-content: space-between;
+}
+.fdc{
+    flex-direction: column;
+}
+.nw{
+    text-wrap: nowrap;
+}
+.gap1r{
+    gap: 1rem;
+}

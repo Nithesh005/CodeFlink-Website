@@ -1,0 +1,42 @@
+.appbar {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    transition: top 0.1s;
+    justify-content: space-between;
+}
+
+.appbar a img {
+    border-radius: 50%;
+}
+
+.appbar a {
+    display: flex;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 1rem;
+    font-weight: 600;
+}
+ul li a{
+    font-size: large;    
+}

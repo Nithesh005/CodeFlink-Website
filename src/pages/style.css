@@ -1,0 +1,121 @@
+.sec {
+    /* margin-top: 70px; */
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.Service {
+    /* height: 100vh; */
+    padding: 1rem;
+}
+
+.lorem {
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.left {
+    /* background-color: aqua; */
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+.left,
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 50rem; */
+    overflow: hidden;
+}
+
+.bannerText {
+    /* padding-left: 5rem; */
+    font-size: 40px;
+    font-weight: 600;
+    width: 500px;
+    text-align: center;
+}
+
+.bannerImage {
+    /* background-color: antiquewhite; */
+    /* background-image: url('../assets/image2.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgbg {
+    position: relative;
+    display: inline-block;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.imgbg::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    /* Adjust size as needed */
+    height: 600px;
+    /* Adjust size as needed */
+    background: radial-gradient(circle, rgb(255, 245, 206) 0%, rgba(255, 179, 27, 0.815) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.bannerImage::afte {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25%;
+    /* Adjust the height as needed */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+    /* Creates the shadow effect */
+    pointer-events: none;
+    /* Ensures the pseudo-element does not interfere with user interactions */
+}
+
+span {
+    color: blueviolet;
+    font-style: italic;
+}
+
+
+
+.MuiAutocomplete-listbox {
+    display: block;
+}
+.col1{
+    width: 50%;
+}
+.container{
+    padding: 5rem;
+    height: 100vh;
+}
+.one{
+    font-weight: 100;
+}
+.col2 ul li img{
+    border-radius: 50px;
+    height: 50px;
+    width:50px;
+    box-shadow: 1px solid;
+}
