@@ -1,6 +1,6 @@
  .headcontainer {
      background-image: url('../assets/careerimg.jpg');
-     height: 100vh;
+     height: 80vh;
      width: 100vw;
      background-repeat: no-repeat;
      background-size: cover;
@@ -14,7 +14,7 @@
      flex-direction: column;
      justify-content: center;
      width: 70vw;
-     top: 45%;
+     /* top: 45%; */
      font-family: Roobert, sans-serif;
  }
 
@@ -32,7 +32,7 @@
      font-size: small;
      font-weight: 400;
      color: #525252;
-     /* letter-spacing: -0.5px; */
+     letter-spacing: -0.5px;
      line-height: 2rem;
      border: 1px solid black;
      padding: 1rem;
