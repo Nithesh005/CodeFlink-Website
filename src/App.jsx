@@ -11,6 +11,7 @@ import AppAppBar from './Suporting_Components/AppAppBar';
 import FooterComponet from './componets/FooterComponet';
 import MDBFooterComponent from './componets/FooterComponet';
 import Footer from './componets/FooterComponet';
+import Career from './pages/Career';
 
 
 function App() {
@@ -44,10 +45,11 @@ function App() {
   return (
     <div className='App'>
       {/* <Head_nav_Bar /> */}
-      <AppAppBar />
+      {/* <AppAppBar /> */}
       <Routes>
         <Route path="/" element={<Section />} />
         <Route path="/about" element={<Page2 />} />
+        <Route path="/career" element={<Career />} />
       </Routes>
       <Footer />
       

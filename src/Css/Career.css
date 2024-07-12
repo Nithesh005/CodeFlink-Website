@@ -1,0 +1,74 @@
+ .headcontainer {
+     background-image: url('../assets/careerimg.jpg');
+     height: 100vh;
+     width: 100vw;
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .details-car {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 70vw;
+     top: 45%;
+     font-family: Roobert, sans-serif;
+ }
+
+ .details-car .firt-cont {
+     /* width: 50vw; */
+     font-weight: 600;
+     font-size: 3rem;
+     text-transform: uppercase;
+
+ }
+
+ .details-car .sec-cont {
+     width: 50vw;
+     line-height: 2rem;
+     font-size: small;
+     font-weight: 400;
+     color: #525252;
+     /* letter-spacing: -0.5px; */
+     line-height: 2rem;
+     border: 1px solid black;
+     padding: 1rem;
+ }
+
+ .blac-card-- {
+     background-color: black;
+     height: 50vh;
+     background-image: url('../assets/background-log.svg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     gap: 10px;
+     font-family: Roobert, sans-serif;
+    
+ }
+
+ .cont1 {
+    font-size: 2rem;
+     color: white;
+     width: 50vw;
+ }
+ .cont2 {
+     color: white;
+     width: 50vw;
+ }
+ .fon1{
+    font-family: Roobert, sans-serif;
+ }
+ .details-car-he{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
