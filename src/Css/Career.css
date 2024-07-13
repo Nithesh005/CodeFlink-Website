@@ -1,6 +1,6 @@
  .headcontainer {
      background-image: url('../assets/careerimg.jpg');
-     height: 80vh;
+     height: 100vh;
      width: 100vw;
      background-repeat: no-repeat;
      background-size: cover;
@@ -14,8 +14,13 @@
      flex-direction: column;
      justify-content: center;
      width: 70vw;
-     /* top: 45%; */
+     top: 40%;
+     margin: 10vh;
      font-family: Roobert, sans-serif;
+ }
+
+ .butpad {
+     /* width: 20%; */
  }
 
  .details-car .firt-cont {
@@ -23,7 +28,11 @@
      font-weight: 600;
      font-size: 3rem;
      text-transform: uppercase;
+ }
 
+ .firt-cont1 {
+     /* border: 1px solid rgb(0, 0, 0); */
+     padding: 1rem;
  }
 
  .details-car .sec-cont {
@@ -34,12 +43,11 @@
      color: #525252;
      letter-spacing: -0.5px;
      line-height: 2rem;
-     border: 1px solid black;
-     padding: 1rem;
+     /* padding: 1rem; */
  }
 
  .blac-card-- {
-     background-color: black;
+     background-color: rgb(0, 0, 0);
      height: 50vh;
      background-image: url('../assets/background-log.svg');
      background-repeat: no-repeat;
@@ -51,24 +59,54 @@
      text-align: center;
      gap: 10px;
      font-family: Roobert, sans-serif;
-    
+
  }
 
  .cont1 {
-    font-size: 2rem;
+     font-size: 2rem;
      color: white;
      width: 50vw;
  }
+
  .cont2 {
      color: white;
      width: 50vw;
  }
- .fon1{
-    font-family: Roobert, sans-serif;
+
+ .fon1 {
+     font-family: Roobert, sans-serif;
  }
- .details-car-he{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+ .details-car-he {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .careers2 {
+     width: 100vw;
+     min-height: 100vh;
+     height: auto;
+ }
+
+ .workus--page {
+     text-align: center;
+ }
+
+ .c-name {
+     /* color: orange; */
+     font-weight: 700;
+ }
+
+ .im-log {
+     width: 100px;
+     padding: 1rem;
+ }
+ /* .card-hover1 :hover{
+    background-color: rgba(255, 166, 0, 0.253);
+ } */
+
+ .tit-car{
+    text-transform: uppercase;
  }
