@@ -92,7 +92,7 @@ export const OurProducts = () => {
             <div className="ProductsPage" id="ProductsPage">
                 <div className="ProductsPage__title">Our Products</div>
                 <div className="ProductsPage__cards">
-                    <div className="content-with-card">
+                    <div className="content-with-card" data-aos="fade-right">
                         <ProductCard
                             title="Skisko"
                             description="Social Media Application"
@@ -103,7 +103,7 @@ export const OurProducts = () => {
                             <p>Our range of products is designed to meet all your needs, providing both functionality and style. Whether you're looking for something modern or classic, we've got you covered. Browse through our collection and find the perfect item that suits your taste.</p>
                         </div>
                     </div>
-                    <div className="content-with-card content-with-card1">
+                    <div className="content-with-card content-with-card1" data-aos="fade-left">
                         <div className="additional-content p3r">
                             <h2>Discover More About Our Products</h2>
                             <p>Our range of products is designed to meet all your needs, providing both functionality and style. Whether you're looking for something modern or classic, we've got you covered. Browse through our collection and find the perfect item that suits your taste.</p>

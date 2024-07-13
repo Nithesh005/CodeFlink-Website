@@ -29,9 +29,9 @@ const Footer = () => {
         <div className="grid-item">
           <h6>Company</h6>
           <ul className="df fdc">
-            <li><a href="#!">CodeFlink</a></li>
+            <li><a href="#!">CodeFlink Organization</a></li>
             <li><a href="#!">Services</a></li>
-            <li><a href="#!">Blogs</a></li>
+            <li><a href="#!">official Blogs</a></li>
           </ul>
         </div>
         <div className="grid-item">
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-text">
-        <p>&copy; <span id="year"></span> Your Company. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Codeflink. All rights reserved. {new Date().getFullYear()}</p>
       </div>
 
     </Box>

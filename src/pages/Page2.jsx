@@ -4,6 +4,8 @@ import service1 from '../assets/service1.png'
 import step1 from '../assets/step1.jpg'
 import s2 from '../assets/s2.jpg'
 import s3 from '../assets/s3.jpg'
+import MagneticEffect from '../componets/MagneticEffect';
+// import MagneticEffect from '../componets/MagneticEffect';
 
 const Page2 = () => {
     const items = ['Item 1', 'Item 2', 'Item 3'];
@@ -19,8 +21,8 @@ const Page2 = () => {
                 </div>
                 <div className="col2">
                     <ul className='df fdc'>
-                        <li className='df'>
-                            <div className="imageSession df jcc aic" style={{ width: '100px' }}>
+                        <li className='df lists' data-aos="fade-left">
+                            <div className="imageSession df jcc aic" style={{ width: '30%' , margin:'1rem'}}>
                                 <img src={step1} alt=""/>
                             </div>
                             <div className="eqvaluteImg df fdc gap1r">
@@ -29,8 +31,8 @@ const Page2 = () => {
 
                             </div>
                         </li>
-                        <li className='df'>
-                            <div className="imageSession" style={{ width: '100px' }}>
+                        <li className='df lists' data-aos="fade-left">
+                            <div className="imageSession df jcc aic" style={{ width: '30%' , margin:'1rem'}}>
                                 <img src={s2} alt="" />
                             </div>
                             <div className="eqvaluteImg df fdc gap1r">
@@ -38,12 +40,12 @@ const Page2 = () => {
                                 <div className="one">Seamlessly integrate and scale your operations with our robust cloud solutions, ensuring flexibility and reliability.</div>
                             </div>
                         </li>
-                        <li className='df'>
-                            <div className="imageSession" style={{ width: '100px' }}>
+                        <li className='df lists' data-aos="fade-left">
+                            <div className="imageSession df jcc aic" style={{ width: '30%' , margin:'1rem'}}>
                                 <img src={s3} alt="" />
                             </div>
                             <div className="eqvaluteImg df fdc gap1r">
-                                <b>Cybersecurity Services</b>
+                                <b>Mobile Application Development</b>
                                 <div className="one">Protect your digital assets with our comprehensive security measures, safeguarding your startup from threats and vulnerabilities.</div>
                             </div>
                         </li>

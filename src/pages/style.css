@@ -12,6 +12,33 @@
     width: 100vw;
 }
 
+/* Service page */
+.eqvaluteImg {
+    transition: transform 0.3s ease-in-out;
+}
+
+.imageSession {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* .lists:hover ,
+.eqvaluteImg:hover,
+.imageSession:hover {
+    transform: scale(1.05);
+} */
+.lists:hover .imageSession,
+.lists:hover .eqvaluteImg {
+    transform: scale(1.05);
+}
+
+.lists:hover {
+    background-color: #ffefd224;
+    border-radius: 1rem;
+
+}
+
+/* end service */
+
 .lorem {
     padding: 1rem 0rem 1rem 0rem;
 }
@@ -130,7 +157,7 @@ span {
 
 .imageSession {
     width: fit-content;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 
@@ -138,6 +165,11 @@ span {
 .logo {
     text-align: center;
     color: black;
+}
+
+.grid-item ul {
+    padding-left: 0%;
+    /* background-color: #007bff; */
 }
 
 .grid {
@@ -328,7 +360,7 @@ a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: start;
-    width: 97%;
+    width: 100%;
     /* padding-left: 5rem; */
 
     /* Center the cards horizontally */
@@ -371,7 +403,7 @@ a:hover {
     .icon {
         font-size: 3rem;
     }
-    
+
 }
 
 
@@ -388,9 +420,10 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
     background-color: #fff;
-    width: 95%;
+    width: 100%;
 }
-.content-with-card1{
+
+.content-with-card1 {
     flex-direction: column-reverse;
 
 }
@@ -482,10 +515,12 @@ a:hover {
         text-align: left;
         width: 60%;
     }
-    .innerContainer{
+
+    .innerContainer {
         flex-direction: row;
     }
-    .contactInfo{
+
+    .contactInfo {
         width: 40%;
     }
 }
@@ -522,7 +557,8 @@ a:hover {
 }
 
 .icon:hover {
-    background-color: #0073b1; /* LinkedIn blue */
+    background-color: #0073b1;
+    /* LinkedIn blue */
     transform: translateY(-5px);
 }
 
@@ -533,3 +569,17 @@ a:hover {
 .icon:hover .fab {
     color: #ffffff;
 }
+
+/* Magnetic effect */
+.magnetic-container {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.magnetic-container img {
+    transition: transform 0.2s ease-out;
+    will-change: transform;
+}
+
+/* curve animation */

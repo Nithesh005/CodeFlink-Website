@@ -12,6 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import cflogo from '../assets/CFlogo.png'
+import { Link } from 'react-router-dom';
 const logoStyle = {
   // width: '140px',
   height: 'auto',
@@ -100,7 +101,7 @@ function AppAppBar() {
                 display: 'flex',
                 alignItems: 'center',
                 ml: '-18px',
-                justifyContent:'end',
+                justifyContent: 'end',
                 px: 0,
               }}
             >
@@ -112,14 +113,16 @@ function AppAppBar() {
                 alt="logo of sitemark"
               /> */}
               <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                <MenuItem
-                  onClick={() => scrollToSection('features')}
-                  sx={{ py: '6px', px: '12px' }}
-                >
-                  <Typography variant="body2" color="text.primary" href='#home' component="a">
+                <Typography variant="body2" color="text.primary" href='#home' component="a" sx={{ textDecoration: 'none' }}>
+                  <MenuItem
+                    component={Link}
+                    to="/"
+                    onClick={() => scrollToSection('features')}
+                    sx={{ py: '6px', px: '12px' }}
+                  >
                     Home
-                  </Typography>
-                </MenuItem>
+                  </MenuItem>
+                </Typography>
                 {/* <MenuItem
                   onClick={() => scrollToSection('testimonials')}
                   sx={{ py: '6px', px: '12px' }}
@@ -128,39 +131,41 @@ function AppAppBar() {
                     Testimonials
                   </Typography>
                 </MenuItem> */}
-                
-                <MenuItem
-                  onClick={() => scrollToSection('highlights')}
-                  sx={{ py: '6px', px: '12px' }}
-                >
-                  <Typography variant="body2" color="text.primary" component='a' href='#ProductsPage'>
+
+                <Typography variant="body2" color="text.primary" component='a' href='#ProductsPage'>
+                  <MenuItem
+                    onClick={() => scrollToSection('highlights')}
+                    sx={{ py: '6px', px: '12px' }}
+                  >
                     Products
-                  </Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => scrollToSection('pricing')}
-                  sx={{ py: '6px', px: '12px' }}
-                >
-                  <Typography variant="body2" color="text.primary" href='#services' component="a">
+                  </MenuItem>
+                </Typography>
+                <Typography variant="body2" color="text.primary" href='#services' component="a">
+                  <MenuItem
+                    onClick={() => scrollToSection('pricing')}
+                    sx={{ py: '6px', px: '12px' }}
+                  >
                     Services
-                  </Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => scrollToSection('faq')}
-                  sx={{ py: '6px', px: '12px' }}
-                >
-                  <Typography variant="body2" color="text.primary">
+                  </MenuItem>
+                </Typography>
+                <Typography variant="body2" color="text.primary">
+                  <MenuItem
+                    component={Link}
+                    to="/career"
+                    onClick={() => scrollToSection('faq')}
+                    sx={{ py: '6px', px: '12px' }}
+                  >
                     Careers
-                  </Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => scrollToSection('highlights')}
-                  sx={{ py: '6px', px: '12px' }}
-                >
-                  <Typography variant="body2" color="text.primary" component='a' href='#contactus'>
+                  </MenuItem>
+                </Typography>
+                <Typography variant="body2" color="text.primary" component='a' href='#contactus'>
+                  <MenuItem
+                    onClick={() => scrollToSection('highlights')}
+                    sx={{ py: '6px', px: '12px' }}
+                  >
                     Contact Us
-                  </Typography>
-                </MenuItem>
+                  </MenuItem>
+                </Typography>
               </Box>
             </Box>
             {/* <Box

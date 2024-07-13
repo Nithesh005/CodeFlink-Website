@@ -33,7 +33,7 @@ export const ContactusPAge = () => {
     };
     return (
         <>
-            <div className="contactus" id="contactus">
+            <div className="contactus" id="contactus" data-aos="fade-up">
                 <div className="innerContainer">
                     <div className="contactInfo df fdc">
                         <div className="contactusHead">
@@ -41,8 +41,6 @@ export const ContactusPAge = () => {
                             <p>For any queries, please contact us at</p>
                         </div>
                         <div className="contactdetials df fdc gap1r">
-                            {/* <a href="mailto:premkumar.c@codeflink.in">premkumar.c@codeflink.in</a>
-                            <a href="tel:+91 7477778845">+91 7477778845</a> */}
                             <Chip
                                 icon={<PhoneIcon />}
                                 label="+91 7477778845"
@@ -58,9 +56,11 @@ export const ContactusPAge = () => {
 
                         </div>
                         <div>
+                        {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0179102457023!2d78.03679147379535!3d9.932466090169518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cebe2c8b277d%3A0xdc3d6c228cef6369!2sThendral%20Nagar%20Main%20Rd%2C%20Tamil%20Nadu%20625019!5e0!3m2!1sen!2sin!4v1720868634357!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.6414679140294!2d76.94210277381569!3d11.06548428910137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858c3a0512731%3A0x6969b33a71907448!2sJothi%20Media!5e0!3m2!1sen!2sin!4v1720860003926!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0179102457023!2d78.03679147379535!3d9.932466090169518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cebe2c8b277d%3A0xdc3d6c228cef6369!2sThendral%20Nagar%20Main%20Rd%2C%20Tamil%20Nadu%20625019!5e0!3m2!1sen!2sin!4v1720868634357!5m2!1sen!2sin"
                                 width="600"
+                                
                                 height="250"
                                 style={{ border: 0 }}
                                 allowFullScreen=""
@@ -106,12 +106,6 @@ export const ContactusPAge = () => {
                                     <FormControlLabel value="female" control={<Radio />} label="General Enquiry" />
                                     <FormControlLabel value="male" control={<Radio />} label="Feedback" />
                                     <FormControlLabel value="other" control={<Radio />} label="Other" />
-                                    {/* <FormControlLabel
-                                        value="disabled"
-                                        disabled
-                                        control={<Radio />}
-                                        label="other"
-                                    /> */}
                                 </RadioGroup>
                             </FormControl>
                             <TextField
