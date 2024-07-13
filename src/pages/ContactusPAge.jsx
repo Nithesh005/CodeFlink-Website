@@ -84,12 +84,12 @@ export const ContactusPAge = () => {
                         </div>
                     </div>
                     <div className="form">
-                        <div className="inputs df" style={{ width: '100%' }}>
-                            <div className="row1" >
+                        <div className="inputs df fdc" style={{ width: '200%' }}>
+                            <div className="row1 df fdc gap1r" >
                                 <TextField id="standard-basic" label="First Name" variant="standard" sx={{ width: '100%' }} />
                                 <TextField id="standard-basic" label="Last Name" variant="standard" sx={{ width: '100%' }} />
                             </div>
-                            <div className="row2">
+                            <div className="row2 df fdc gap1r">
                                 <TextField id="standard-basic" type="email" label="Email" variant="standard" sx={{ width: '100%' }} />
                                 <TextField id="standard-basic" label="Phone Number" variant="standard" sx={{ width: '100%' }} />
                             </div>
