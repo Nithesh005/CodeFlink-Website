@@ -88,6 +88,18 @@
      width: 100vw;
      min-height: 100vh;
      height: auto;
+     display: flex;
+     flex-direction: column;
+     row-gap: 10vh;
+ }
+
+ .careers3 {
+     width: 100vw;
+     min-height: 100vh;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     row-gap: 10vh;
  }
 
  .workus--page {
@@ -103,10 +115,52 @@
      width: 100px;
      padding: 1rem;
  }
+
  /* .card-hover1 :hover{
     background-color: rgba(255, 166, 0, 0.253);
  } */
 
- .tit-car{
-    text-transform: uppercase;
+ .tit-car {
+     text-transform: uppercase;
  }
+
+ .product-card1:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+ }
+
+ .card-holder {
+     padding: 1rem;
+ }
+
+ .idcard-cont {
+    
+     background-image: url('../assets/logo/idcard.png');
+     background-repeat: no-repeat;
+     background-size: contain;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+
+ .card-holder-form {
+     padding: 1rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: end;
+     align-items: end;
+ }
+ .ful-cr{
+    height: max-content;
+    display: flex;
+    /* flex-direction: column; */
+     /* justify-content: end; */
+     /* align-items: end; */
+ }
+ @media screen and (max-width: 768px) {
+    .idcard-cont{
+        height: 50vh;
+    }
+}
