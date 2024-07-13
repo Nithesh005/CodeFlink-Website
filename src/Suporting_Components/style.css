@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: end;
     transition: top 0.1s;
+    background-color: red;
     justify-content: space-between;
 }
 

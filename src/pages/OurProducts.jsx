@@ -3,7 +3,8 @@ import bannerImage from '../assets/bannerImage1.png'
 import step1 from '../assets/step1.jpg'
 import s2 from '../assets/s2.jpg'
 import s3 from '../assets/s3.jpg'
-
+import skisho from '../assets/skisho.jpeg'
+import Aveira from '../assets/Aveira.jpeg'
 const itemData = [
     {
         img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
@@ -91,14 +92,41 @@ export const OurProducts = () => {
             <div className="ProductsPage" id="ProductsPage">
                 <div className="ProductsPage__title">Our Products</div>
                 <div className="ProductsPage__cards">
-                    {products.map((product, index) => (
+                    <div className="content-with-card">
                         <ProductCard
-                            key={index}
-                            title={product.title}
-                            description={product.description}
-                            image={product.image}
+                            title="Skisko"
+                            description="Social Media Application"
+                            image={skisho}
                         />
-                    ))}
+                        <div className="additional-content p3r">
+                            <h2>Discover More About Our Products</h2>
+                            <p>Our range of products is designed to meet all your needs, providing both functionality and style. Whether you're looking for something modern or classic, we've got you covered. Browse through our collection and find the perfect item that suits your taste.</p>
+                        </div>
+                    </div>
+                    <div className="content-with-card content-with-card1">
+                        <div className="additional-content p3r">
+                            <h2>Discover More About Our Products</h2>
+                            <p>Our range of products is designed to meet all your needs, providing both functionality and style. Whether you're looking for something modern or classic, we've got you covered. Browse through our collection and find the perfect item that suits your taste.</p>
+                        </div>
+                        <ProductCard
+                            title="Aveira"
+                            description="Comericial Marketing SPA"
+                            image={Aveira}
+                        />
+                    </div>
+                    {/* {products.map((product, index) => (
+                        <div className="content-with-card" key={index}>
+                            <ProductCard
+                                title={product.title}
+                                description={product.description}
+                                image={product.image}
+                            />
+                            <div className="additional-content">
+                                <h2>Discover More About Our Products</h2>
+                                <p>Our range of products is designed to meet all your needs, providing both functionality and style. Whether you're looking for something modern or classic, we've got you covered. Browse through our collection and find the perfect item that suits your taste.</p>
+                            </div>
+                        </div>
+                    ))} */}
                 </div>
             </div>
         </>

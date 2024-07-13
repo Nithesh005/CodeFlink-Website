@@ -16,23 +16,23 @@ import Career from './pages/Career';
 
 
 function App() {
-  const lastScroll = useRef(0);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset;
-      const appbar = document.getElementsByClassName('appbar')[0];
-      if (scrollTop > lastScroll.current) {
-        appbar.style.top = '-70px';
-      } else {
-        appbar.style.top = '0';
-      }
-      lastScroll.current = scrollTop;
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  // const lastScroll = useRef(0);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollTop = window.pageYOffset;
+  //     const appbar = document.getElementsByClassName('appbar')[0];
+  //     if (scrollTop > lastScroll.current) {
+  //       appbar.style.top = '-70px';
+  //     } else {
+  //       appbar.style.top = '0';
+  //     }
+  //     lastScroll.current = scrollTop;
+  //   };
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
 
   useEffect(() => {
@@ -46,7 +46,7 @@ function App() {
   return (
     <div className='App'>
       {/* <Head_nav_Bar /> */}
-      {/* <AppAppBar /> */}
+      <AppAppBar />
       <Routes>
         <Route path="/" element={<Section />} />
         <Route path="/about" element={<Page2 />} />
