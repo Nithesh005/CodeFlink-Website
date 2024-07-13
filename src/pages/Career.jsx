@@ -29,7 +29,7 @@ const Career = () => {
                         <div data-aos="fade-left" >
                             <h1 className='firt-cont'> Be Part Of Our Mission</h1>
                             <div className="firt-cont1">
-                            <TypingEffect text={text} />
+                                <TypingEffect text={text} />
                                 <Button className='butpad' variant="dark">View Job </Button>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ const Career = () => {
                 </Row>
 
             </div>
-{/* Content Of Ath  */}
+            {/* Content Of Ath  */}
             <div className="careers1" >
                 <Row >
                     {/* <Col lg={12} md={2} xs={2}></Col> */}
@@ -56,7 +56,7 @@ const Career = () => {
                 </Row>
             </div>
 
-{/* Why Work With Codeflink  */}
+            {/* Why Work With Codeflink  */}
             <Container className='careers2'>
                 <Row>
                     <Col lg={2} md={3} xs={1}></Col>
@@ -71,7 +71,7 @@ const Career = () => {
                 <Row >
                     <Col lg={4} md={4} xs={12} >
                         <Card style={{ width: '18rem' }} data-aos="flip-down" className='product-card' >
-                            <Card.Img variant="top" src={Innovative} className='im-log'/>
+                            <Card.Img variant="top" src={Innovative} className='im-log' />
                             <Card.Body>
                                 <Card.Title className='tit-car'>Innovative</Card.Title>
                                 <Card.Text>
@@ -81,7 +81,7 @@ const Career = () => {
                         </Card>
                     </Col>
                     <Col lg={4} md={4} xs={12}><Card style={{ width: '18rem' }} className='product-card' data-aos="flip-down">
-                        <Card.Img variant="top" src={Collaborative} className='im-log'/>
+                        <Card.Img variant="top" src={Collaborative} className='im-log' />
                         <Card.Body>
                             <Card.Title className='tit-car'>Collaborative</Card.Title>
                             <Card.Text>
