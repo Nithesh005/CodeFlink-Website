@@ -1,33 +1,86 @@
-import { Button, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField } from "@mui/material"
+import { Button, Chip, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField, Tooltip, Typography } from "@mui/material"
 import SendIcon from '@mui/icons-material/Send';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+// import DeleteIcon from '@mui/icons-material/Delete';
+import { useEffect } from "react";
 export const ContactusPAge = () => {
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
+        script.async = true;
+        document.body.appendChild(script);
+        // window.initMap = initMap;
+    }, []);
+
+    // function initMap() {
+    //     var location = { lat: -25.344, lng: 131.036 }; // Replace with your desired location
+    //     var map = new google.maps.Map(document.getElementById('map'), {
+    //         zoom: 10,
+    //         center: location
+    //     });
+    //     var marker = new google.maps.Marker({
+    //         position: location,
+    //         map: map
+    //     });
+    // }
+    const handleEmailClick = () => {
+        window.location.href = 'mailto:premkumar.c@codeflink.in';
+    };
+    const handlePhoneClick = () => {
+        window.location.href = 'tel:+917477778845';
+    };
     return (
         <>
             <div className="contactus" id="contactus">
-                <div className="innerContainer df">
+                <div className="innerContainer">
                     <div className="contactInfo df fdc">
                         <div className="contactusHead">
                             <h1>Contact Us</h1>
                             <p>For any queries, please contact us at</p>
                         </div>
                         <div className="contactdetials df fdc gap1r">
-                            <p>info@mywebsite.com</p>
-                            <p>+91 9876543210</p>
+                            {/* <a href="mailto:premkumar.c@codeflink.in">premkumar.c@codeflink.in</a>
+                            <a href="tel:+91 7477778845">+91 7477778845</a> */}
+                            <Chip
+                                icon={<PhoneIcon />}
+                                label="+91 7477778845"
+                                onClick={handlePhoneClick}
+                                variant="outlined"
+                            />
+                            <Chip
+                                icon={<EmailIcon />}
+                                label="premkumar.c@codeflink.in"
+                                onClick={handleEmailClick}
+                                variant="outlined"
+                            />
+
                         </div>
+                        <div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.6414679140294!2d76.94210277381569!3d11.06548428910137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858c3a0512731%3A0x6969b33a71907448!2sJothi%20Media!5e0!3m2!1sen!2sin!4v1720860003926!5m2!1sen!2sin"
+                                width="600"
+                                height="250"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                        {/* <div id="map">hai</div> */}
                         <div className="socialMedia">
-                            {/* <div className="icon">
-                                <i className="fab fa-instagram"></i>
-                            </div> */}
-                            <div className="icon">
-                                <i className="fas fa-envelope"></i>
-                            </div>
-                            <div className="icon">
-                                <i className="fab fa-linkedin"></i>
-                            </div>
-                            {/* <div className="icon">
-                                <i className="fab fa-facebook"></i>
-                            </div> */}
+                            <Tooltip title="Mail" placement="top">
+                                    <Typography className="icon" component='a' href="mailto:premkumar.c@codeflink.in">
+                                        <i className="fas fa-envelope"></i>
+                                    </Typography>
+                                {/* <a href="mailto:premkumar.c@codeflink.in"></a> */}
+                            </Tooltip>
+                            <Tooltip title="Linkedin" placement="top">
+                                <Typography className="icon" component='a' target="_blank" href="https://www.linkedin.com/company/code-flink">
+                                    <i className="fab fa-linkedin"></i>
+                                </Typography>
+                            </Tooltip>
                         </div>
                     </div>
                     <div className="form">

@@ -39,10 +39,31 @@ function AppAppBar() {
     }
   };
 
+  const lastScroll = React.useRef(0);
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      const appbar = document.getElementsByClassName('appbar')[0];
+      appbar.style.transition = 'top .5s';
+      if (scrollTop > lastScroll.current) {
+        appbar.style.top = '-90px';
+      } else {
+        appbar.style.top = '0';
+      }
+      lastScroll.current = scrollTop;
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
     <div>
       <AppBar
-        position="fixed"
+        // position="fixed"
+        className='appbar'
         sx={{
           boxShadow: 0,
           bgcolor: 'transparent',
