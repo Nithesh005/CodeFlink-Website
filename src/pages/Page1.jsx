@@ -1,5 +1,5 @@
 import './style.css'
-import bannerImage from '../assets/bannerImage1.png'
+import bannerImage from '../assets/des.png'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from 'react';
