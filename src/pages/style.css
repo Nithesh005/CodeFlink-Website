@@ -238,7 +238,8 @@ a:hover {
     /* padding-left: 5rem; */
     margin: 2rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
-    gap: 1rem;
+    /* gap: 1rem; */
+    justify-content: space-around;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -265,9 +266,14 @@ a:hover {
 }
 
 .inputs .row1,
-.inputs .row1 {
+.inputs .row2 {
     width: 50%;
+    gap: 3rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
 }
+
 
 .messageDiv {
     padding: 1rem;
@@ -583,3 +589,10 @@ a:hover {
 }
 
 /* curve animation */
+.form{
+    width: 50%;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
