@@ -79,6 +79,7 @@ function AppAppBar() {
                 display: 'flex',
                 alignItems: 'center',
                 ml: '-18px',
+                justifyContent:'end',
                 px: 0,
               }}
             >
@@ -106,19 +107,12 @@ function AppAppBar() {
                     Testimonials
                   </Typography>
                 </MenuItem> */}
+                
                 <MenuItem
                   onClick={() => scrollToSection('highlights')}
                   sx={{ py: '6px', px: '12px' }}
                 >
-                  <Typography variant="body2" color="text.primary">
-                    Contact Us
-                  </Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={() => scrollToSection('highlights')}
-                  sx={{ py: '6px', px: '12px' }}
-                >
-                  <Typography variant="body2" color="text.primary">
+                  <Typography variant="body2" color="text.primary" component='a' href='#ProductsPage'>
                     Products
                   </Typography>
                 </MenuItem>
@@ -135,12 +129,20 @@ function AppAppBar() {
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
-                  Careers
+                    Careers
+                  </Typography>
+                </MenuItem>
+                <MenuItem
+                  onClick={() => scrollToSection('highlights')}
+                  sx={{ py: '6px', px: '12px' }}
+                >
+                  <Typography variant="body2" color="text.primary" component='a' href='#contactus'>
+                    Contact Us
                   </Typography>
                 </MenuItem>
               </Box>
             </Box>
-            <Box
+            {/* <Box
               sx={{
                 display: { xs: 'none', md: 'flex' },
                 gap: 0.5,
@@ -157,17 +159,7 @@ function AppAppBar() {
               >
                 Sign in
               </Button>
-              {/* <Button
-                color="primary"
-                variant="contained"
-                size="small"
-                component="a"
-                href="/material-ui/getting-started/templates/sign-up/"
-                target="_blank"
-              >
-                Sign up
-              </Button> */}
-            </Box>
+            </Box> */}
             <Box sx={{ display: { sm: '', md: 'none' } }}>
               <Button
                 variant="text"

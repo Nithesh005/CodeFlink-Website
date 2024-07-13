@@ -7,8 +7,8 @@ const Footer = () => {
     <Box
       sx={{
         // backgroundColor: 'primary.main',
-        backgroundColor: 'darkorange',
-        color: 'black',
+        backgroundColor: 'black',
+        color: 'white',
         py: 3,
         mt: 'auto',
       }}

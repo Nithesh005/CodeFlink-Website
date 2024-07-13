@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import { useEffect } from 'react';
 import Page2 from './Page2';
 import { ContactusPAge } from './ContactusPAge';
+import { OurProducts } from './OurProducts';
 
 const Page1 = () => {
     useEffect(() => {
@@ -30,6 +31,7 @@ const Page1 = () => {
                     </div>
                 </div>
             </div>
+            <OurProducts />
             <Page2 />
             <ContactusPAge />
         </>
