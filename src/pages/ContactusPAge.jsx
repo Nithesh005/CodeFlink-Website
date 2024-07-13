@@ -1,6 +1,9 @@
-import { Button, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField } from "@mui/material"
+import { Button, Chip, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField, Tooltip, Typography } from "@mui/material"
 import SendIcon from '@mui/icons-material/Send';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+// import DeleteIcon from '@mui/icons-material/Delete';
 import { useEffect } from "react";
 export const ContactusPAge = () => {
     useEffect(() => {
@@ -22,6 +25,12 @@ export const ContactusPAge = () => {
     //         map: map
     //     });
     // }
+    const handleEmailClick = () => {
+        window.location.href = 'mailto:premkumar.c@codeflink.in';
+    };
+    const handlePhoneClick = () => {
+        window.location.href = 'tel:+917477778845';
+    };
     return (
         <>
             <div className="contactus" id="contactus">
@@ -32,8 +41,21 @@ export const ContactusPAge = () => {
                             <p>For any queries, please contact us at</p>
                         </div>
                         <div className="contactdetials df fdc gap1r">
-                            <p>premkumar.c@codeflink.in</p>
-                            <p>+91 7477778845</p>
+                            {/* <a href="mailto:premkumar.c@codeflink.in">premkumar.c@codeflink.in</a>
+                            <a href="tel:+91 7477778845">+91 7477778845</a> */}
+                            <Chip
+                                icon={<PhoneIcon />}
+                                label="+91 7477778845"
+                                onClick={handlePhoneClick}
+                                variant="outlined"
+                            />
+                            <Chip
+                                icon={<EmailIcon />}
+                                label="premkumar.c@codeflink.in"
+                                onClick={handleEmailClick}
+                                variant="outlined"
+                            />
+
                         </div>
                         <div>
                             <iframe
@@ -48,16 +70,17 @@ export const ContactusPAge = () => {
                         </div>
                         {/* <div id="map">hai</div> */}
                         <div className="socialMedia">
-                            <div className="contentWithicon df p1r">
-                                <div className="icon">
-                                    <i className="fas fa-envelope"></i>
-                                </div>
-                                <p>premkumar.c@codeflink.in</p>
-                            </div>
-                            <div className="icon">
-                                <i className="fab fa-linkedin"></i>
-
-                            </div>
+                            <Tooltip title="Mail" placement="top">
+                                    <Typography className="icon" component='a' href="mailto:premkumar.c@codeflink.in">
+                                        <i className="fas fa-envelope"></i>
+                                    </Typography>
+                                {/* <a href="mailto:premkumar.c@codeflink.in"></a> */}
+                            </Tooltip>
+                            <Tooltip title="Linkedin" placement="top">
+                                <Typography className="icon" component='a' target="_blank" href="https://www.linkedin.com/company/code-flink">
+                                    <i className="fab fa-linkedin"></i>
+                                </Typography>
+                            </Tooltip>
                         </div>
                     </div>
                     <div className="form">
