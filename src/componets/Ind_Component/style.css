@@ -1,0 +1,43 @@
+.buttonComp{
+    /* font-size: 20px; */
+    color: black;
+    padding: 10px 30px;
+    width: auto;
+    border: 2px solid orange;
+    background-color: orange;
+    text-decoration: none;
+    /* font-weight: bold; */
+    transition: 1s all ease-in-out;
+    justify-content: space-around;
+    gap: .5rem;
+    position: relative;
+    width: 200px;
+    border-radius: 5px;
+}
+.btncomp{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+}
+.fa-arrow-right{
+    transition: 1s all ease-in-out;
+    position: absolute;
+    right: 2rem;
+}
+
+.buttonComp:hover .fa-arrow-right{
+    right: 1.5rem;
+}
+/* .buttonComp:hover .btncomp{
+    transform: scale(1.01);
+    transition: 1s all ease-in-out;
+} */
+.buttonComp:hover{
+    box-shadow: 1px 1px 5px rgb(193, 193, 193);
+    background-color: rgb(235, 141, 0);
+
+}
+.fa-arrow-right{
+}

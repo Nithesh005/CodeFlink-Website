@@ -45,7 +45,7 @@ const Footer = () => {
         <div className="grid-item">
           <h6>Newsletter</h6>
           <p className='p1r'>Subscribe to our newsletter to get the latest updates.</p>
-          <ButtonGroup variant="contained" aria-label="Basic button group" sx={{height:'50px'}}>
+          <ButtonGroup  variant="contained" aria-label="Basic button group" sx={{height:'50px',width:'100%'}}>
             <TextField id="standard-basic" type="email" placeholder='email' variant="outlined" sx={{ width: '100%' , backgroundColor:'grey',color:'white'}} />
             <Button>SUbscribe</Button>
           </ButtonGroup>

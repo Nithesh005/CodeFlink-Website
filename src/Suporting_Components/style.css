@@ -41,3 +41,23 @@ ul li {
 ul li a{
     font-size: large;    
 }
+
+/* drawer Header */
+.drawerHeader {
+    background-color: #ffe2c4; /* Background color */
+    color: #000000; /* Text color */
+    padding: 16px; /* Padding for spacing */
+    border-bottom: 2px solid #e0e0e0; /* Bottom border for separation */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content */
+    font-size: 20px; /* Font size for the text */
+    font-weight: bold; /* Make the text bold */
+}
+  
+.drawerLogo {
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Space between logo and text */
+}
+  
+  

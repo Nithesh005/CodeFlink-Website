@@ -11,8 +11,9 @@ import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
-import cflogo from '../assets/CFlogo.png'
+import cflogo from '../assets/cf_bg_r.png'
 import { Link } from 'react-router-dom';
+import { Tooltip } from '@mui/material';
 const logoStyle = {
   // width: '140px',
   height: 'auto',
@@ -101,17 +102,23 @@ function AppAppBar() {
                 display: 'flex',
                 alignItems: 'center',
                 ml: '-18px',
-                justifyContent: 'end',
+                justifyContent: 'space-between',
                 px: 0,
               }}
             >
-              {/* <img
-                src={cflogo}
-                height={50}
-                width={50}
-                style={logoStyle}
-                alt="logo of sitemark"
-              /> */}
+              <Tooltip title="Code Flink: Agile Innovations">
+                <a href="#home">
+                  <img
+                    src={cflogo}
+                    height={50}
+                    width={50}
+                    style={logoStyle}
+                    alt="logo of sitemark"
+                  />
+                </a>
+              </Tooltip>
+
+
               <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                 <Typography variant="body2" color="text.primary" href='#home' component="a" sx={{ textDecoration: 'none' }}>
                   <MenuItem
@@ -123,14 +130,6 @@ function AppAppBar() {
                     Home
                   </MenuItem>
                 </Typography>
-                {/* <MenuItem
-                  onClick={() => scrollToSection('testimonials')}
-                  sx={{ py: '6px', px: '12px' }}
-                >
-                  <Typography variant="body2" color="text.primary">
-                    Testimonials
-                  </Typography>
-                </MenuItem> */}
 
                 <Typography variant="body2" color="text.primary" component='a' href='#ProductsPage'>
                   <MenuItem
@@ -154,6 +153,7 @@ function AppAppBar() {
                     to="/career"
                     onClick={() => scrollToSection('faq')}
                     sx={{ py: '6px', px: '12px' }}
+                    target='_blank'
                   >
                     Careers
                   </MenuItem>
@@ -196,7 +196,7 @@ function AppAppBar() {
               >
                 <MenuIcon />
               </Button>
-              <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+              <Drawer anchor="left" open={open} onClose={toggleDrawer(false)}>
                 <Box
                   sx={{
                     minWidth: '60dvw',
@@ -214,32 +214,58 @@ function AppAppBar() {
                     }}
                   >
                   </Box>
-                  <MenuItem onClick={() => scrollToSection('features')}>
-                    Features
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('testimonials')}>
-                    Testimonials
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('highlights')}>
-                    Highlights
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('pricing')}>
-                    Pricing
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
-                  <Divider />
-                  <MenuItem>
-                    <Button
-                      color="primary"
-                      variant="contained"
-                      component="a"
-                      href="/material-ui/getting-started/templates/sign-up/"
-                      target="_blank"
-                      sx={{ width: '100%' }}
+                  <div className="drawerHeader">
+                    <img src={cflogo} alt="Code Flink Logo" className="drawerLogo" />
+                    CODE FLINK
+                  </div>
+
+                  <Typography variant="body2" color="text.primary" href='#home' component="a" sx={{ textDecoration: 'none' }}>
+                    <MenuItem
+                      component={Link}
+                      to="/"
+                      onClick={() => scrollToSection('features')}
+                      sx={{ py: '6px', px: '12px' }}
                     >
-                      Sign up
-                    </Button>
-                  </MenuItem>
+                      Home
+                    </MenuItem>
+                  </Typography>
+                  <Typography variant="body2" color="text.primary" component='a' href='#ProductsPage'>
+                    <MenuItem
+                      onClick={() => scrollToSection('highlights')}
+                      sx={{ py: '6px', px: '12px' }}
+                    >
+                      Products
+                    </MenuItem>
+                  </Typography>
+                  <Typography variant="body2" color="text.primary" href='#services' component="a">
+                    <MenuItem
+                      onClick={() => scrollToSection('pricing')}
+                      sx={{ py: '6px', px: '12px' }}
+                    >
+                      Services
+                    </MenuItem>
+                  </Typography>
+                  <Typography variant="body2" color="text.primary">
+                    <MenuItem
+                      component={Link}
+                      to="/career"
+                      onClick={() => scrollToSection('faq')}
+                      sx={{ py: '6px', px: '12px' }}
+                      target='_blank'
+                    >
+                      Careers
+                    </MenuItem>
+                  </Typography>
+                  <Typography variant="body2" color="text.primary" component='a' href='#contactus'>
+                    <MenuItem
+                      onClick={() => scrollToSection('highlights')}
+                      sx={{ py: '6px', px: '12px' }}
+                    >
+                      Contact Us
+                    </MenuItem>
+                  </Typography>
+                  {/* <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem> */}
+                  <Divider />
                   <MenuItem>
                     <Button
                       color="primary"

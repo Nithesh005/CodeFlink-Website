@@ -7,7 +7,7 @@ import s3 from '../assets/s3.jpg'
 import MagneticEffect from '../componets/MagneticEffect';
 // import MagneticEffect from '../componets/MagneticEffect';
 
-const Page2 = () => {
+const ServicePage = () => {
     const items = ['Item 1', 'Item 2', 'Item 3'];
     return (
         <div className="Service" id='services'>
@@ -17,13 +17,14 @@ const Page2 = () => {
                     <div className='lorem'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                         labore et dolore magna aliquyam erat, sed diam voluptua.
                     </div>
-                    <img src={service1} alt="" width={500} />
+                    {/* <img src={service1} alt="" width={500} /> */}
+                    <img src={service1} alt="" style={{ width: '100%', height: 'auto' }} />
                 </div>
                 <div className="col2">
                     <ul className='df fdc'>
                         <li className='df lists' data-aos="fade-left">
                             <div className="imageSession df jcc aic" style={{ width: '30%' , margin:'1rem'}}>
-                                <img src={step1} alt=""/>
+                                <img src={step1} alt="" style={{ width: '100%', height: 'auto' }}/>
                             </div>
                             <div className="eqvaluteImg df fdc gap1r">
                                 <b>Custom Software Development</b>
@@ -33,7 +34,8 @@ const Page2 = () => {
                         </li>
                         <li className='df lists' data-aos="fade-left">
                             <div className="imageSession df jcc aic" style={{ width: '30%' , margin:'1rem'}}>
-                                <img src={s2} alt="" />
+                                {/* <img src={s2} alt="" style={{ width: '100%', height: 'auto' }}/> */}
+                                <img src={s2} alt="" style={{ width: '100%', height: 'auto'}} />
                             </div>
                             <div className="eqvaluteImg df fdc gap1r">
                                 <b>Cloud Integration</b>
@@ -42,7 +44,7 @@ const Page2 = () => {
                         </li>
                         <li className='df lists' data-aos="fade-left">
                             <div className="imageSession df jcc aic" style={{ width: '30%' , margin:'1rem'}}>
-                                <img src={s3} alt="" />
+                                <img src={s3} alt="" style={{ width: '100%', height: 'auto' }}/>
                             </div>
                             <div className="eqvaluteImg df fdc gap1r">
                                 <b>Mobile Application Development</b>
@@ -94,4 +96,4 @@ const Page2 = () => {
     );
 };
 
-export default Page2;
+export default ServicePage;

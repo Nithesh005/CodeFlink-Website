@@ -7,7 +7,7 @@ import './Lib/style.css'
 import './pages/responsive.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head_nav_Bar from './Suporting_Components/Head_nav_Bar';
-import Page2 from './pages/Page2';
+import Page2 from './pages/ServicePage';
 import { Routes, Route } from 'react-router-dom';
 import AppAppBar from './Suporting_Components/AppAppBar';
 import FooterComponet from './componets/FooterComponet';

@@ -28,8 +28,8 @@ const Career = () => {
                     <Col lg={2} md={2} xs={2}></Col>
                 </Row> */}
                 <Row className='details-car' >
-                    <Col lg={12} md={1} xs={2}></Col>
-                    <Col lg={12} md={10} xs={8}>
+                    <Col lg={1} md={1} xs={2}></Col>
+                    <Col lg={10} md={10} xs={8}>
                         <div data-aos="fade-left" >
                             <h1 className='firt-cont'> Be Part Of Our Mission</h1>
                             <div className="firt-cont1">
@@ -38,7 +38,7 @@ const Career = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col lg={12} md={1} xs={2}></Col>
+                    <Col lg={1} md={1} xs={2}></Col>
                 </Row>
 
             </div>
