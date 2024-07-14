@@ -153,7 +153,7 @@ function AppAppBar() {
                     to="/career"
                     onClick={() => scrollToSection('faq')}
                     sx={{ py: '6px', px: '12px' }}
-                    target='_blank'
+                    // target='_blank'
                   >
                     Careers
                   </MenuItem>
@@ -251,7 +251,7 @@ function AppAppBar() {
                       to="/career"
                       onClick={() => scrollToSection('faq')}
                       sx={{ py: '6px', px: '12px' }}
-                      target='_blank'
+                      // target='_blank'
                     >
                       Careers
                     </MenuItem>
@@ -271,8 +271,8 @@ function AppAppBar() {
                       color="primary"
                       variant="outlined"
                       component="a"
-                      href="/material-ui/getting-started/templates/sign-in/"
-                      target="_blank"
+                      // href="/material-ui/getting-started/templates/sign-in/"
+                      // target="_blank"
                       sx={{ width: '100%' }}
                     >
                       Sign in
